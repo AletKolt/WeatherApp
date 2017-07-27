@@ -10,29 +10,64 @@
 
 <body>
     <div class="container">
-        <div class"row">
-            
+        <div class"row" >
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h1 class="text-center">Weather App</h1>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center" id="location-div">
+                <h2 id="location"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="text-center" id="temp">
+                    <span id="min-temp"></span>
+                    <span>/<span>
+                    <span id="max-temp"></span>
+                    <a id="temp-link"><sup>o</sup><span id="temp-unit">C</span></a>
+                </h2>
+            </div>
+        </div>
+        <div class="row" id="other-details-row">
+            <div class="col-lg-2 col-md-2"></div>
+            <div class="col-lg-2 col-md-2 text-center">
+                <div class="row">
+                    <h3 id="weather"></h3>
+                </div>
+<br/>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4"></div>
+                    <div class="col-lg-4 col-md-4">
+                        <img src="" class="img-responsive" id="weather-icon">
+                    </div>
+                    <div class="col-lg-4 col-md-4"></div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-2 col-md-2 text-center">
+                <div class="row">
+                    <h3>Pressure</h3>
+                </div>
+                <div class="row">
+                    <h3 id="pressure" class="value-text"></h3>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-2 col-md-2 text-center">
+                <div class="row">
+                    <h3>Humidity</h3>
+                </div>
+                <div class="row">
+                    <h3 id="humidity" class="value-text"></h3>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2">
+            </div>
         </div>
     </div>
-    <div class="row">
-            <label>Location:</label>
-            <h3 id="location"></h3>
-
-            <label>Weather:</label>
-            <h3 id="weather"></h3>
-
-            <label>Weather Icon:</label>
-            <img src="" id="weather-icon" />
-
-            <label>Temperature:</label>
-            <h3 id="temperature"></h3>
-
-            <label>Pressure:</label>
-            <h3 id="pressure"></h3>
-
-            <label>Humidity:</label>
-            <h3 id="humidity"></h3>
-        </div>
     <script src="jquery-1.12.3.min.js" type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>
 </body>
